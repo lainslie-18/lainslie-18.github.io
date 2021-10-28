@@ -73,3 +73,16 @@ select 'There are a total of', count(occupation), concat(lower(occupation), 's.'
 from occupations
 group by occupation
 order by count(occupation);
+
+/*
+Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than  per month who have been employees for less than  months. Sort your result by ascending employee_id.
+*/
+
+select name from employee
+where salary > 2000 and
+months < 10;
+
+-- Query a count of the number of cities in CITY having a Population larger than 100,000
+
+select count(name) from city
+where population > 100000;
