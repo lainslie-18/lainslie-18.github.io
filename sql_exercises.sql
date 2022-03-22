@@ -338,3 +338,20 @@ WHERE population >
 ALL(SELECT population * 3 FROM world y
 WHERE y.continent=x.continent
 AND y.name != x.name)
+
+/*
+List all the continents - just once each.
+ */
+ SELECT DISTINCT continent FROM world
+
+ /*
+Give the total GDP of Africa
+ */
+SELECT SUM(GDP) FROM world
+WHERE continent = 'Africa'
+
+ /*
+How many countries have an area of at least 1000000
+ */
+SELECT COUNT(name) FROM world
+WHERE area >= 1000000
