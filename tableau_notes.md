@@ -11,3 +11,9 @@ Tableau has sample data sets installed with it
 Tableau can work with Excel spreadsheets, CSV files, PDFs, spatial files, and statistical files
 Tablea can connect to database servers, including relational databases, cube databases, and cloud data
 
+Tableau fields can be hierarchical such as country, state, city
+Dates in Tableau can be discrete or continuous
+Tableau sometimes automatically generates fields as well such as number of records.
+Converting to discrete and converting to a dimension are NOT synonymous.
+Dimensions come out into the Tablea view as themselves, Measures come out as aggregates.
+Measures show as gradient colors and dimensions show as a color palette. 
