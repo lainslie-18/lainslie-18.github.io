@@ -17,3 +17,15 @@ Tableau sometimes automatically generates fields as well such as number of recor
 Converting to discrete and converting to a dimension are NOT synonymous.
 Dimensions come out into the Tablea view as themselves, Measures come out as aggregates.
 Measures show as gradient colors and dimensions show as a color palette. 
+
+Visual analytics leverages our pre-attentive attributes, visual cues humans process automatically with sensory memory (such as light and dark colors, large and small shapes, groups and orientation of objects).
+Mark is the term used to describe the visual representation of the data, such as a bar in a bar chart.
+Line chart - best for viewing trends in data over time
+bar chart - best for comparing data across categories
+Heat Map - best for showing relationship between two factors
+Tree Map - best for showing hierarchical data as proportion of whole
+Gantt Chart - best for showing duration over time
+Bullet Chart - best for evaluating performance of a metric against a goal
+Scatterplot - best for investigating the relationship between quantitative values
+Histogram - best for understanding distribution of the data
+Box-and-whisker plot - best for showing distribution of a set of data
