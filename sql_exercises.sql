@@ -505,3 +505,10 @@ Query the sum of Northern Latitudes (LAT_N) from STATION having values greater t
 */
 SELECT ROUND(SUM(lat_n), 4) FROM station
 WHERE lat_n > 38.7880 AND lat_n < 137.2345
+
+/*
+Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+*/
+SELECT SUM(t1.population) FROM city AS t1
+JOIN country AS t2 ON t1.countrycode = t2.code
+WHERE continent = 'Asia'
