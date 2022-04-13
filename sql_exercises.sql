@@ -512,3 +512,18 @@ Given the CITY and COUNTRY tables, query the sum of the populations of all citie
 SELECT SUM(t1.population) FROM city AS t1
 JOIN country AS t2 ON t1.countrycode = t2.code
 WHERE continent = 'Asia'
+
+/*
+Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+*/
+SELECT city.name FROM city
+JOIN country on city.countrycode = country.code
+WHERE continent = 'Africa';
+
+/*
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+*/
+SELECT country.continent, FLOOR(AVG(city.population))
+FROM city
+JOIN country ON city.countrycode = country.code
+GROUP BY country.continent;
