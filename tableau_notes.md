@@ -32,3 +32,8 @@ Box-and-whisker plot - best for showing distribution of a set of data
 
 Saving a dashboard as a Tableau workbook (.twb file) saves the connection information but does not include a copy of the data source.
 You have to save as a Tablea packaged work (.twbx file) to include the data source
+
+Tablea can connect to data that falls within two categories: flat file data or server-based data
+A live connection is a direct connection to the data while a data extract is a compressed snapshot of data stored locally and loaded into memory
+You can connect to multiple data sources at a time.
+You must have Creator permissions to publish a data source with Tableau Online
